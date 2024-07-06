@@ -29,19 +29,13 @@
         message.innerHTML = "Javascript will be mastered by me in 4 more days"
         console.log("Navaneeth", Date.now());
     } 
-    let isClicked = false
-    
-    const intervalId = setInterval(changeText,2000)
+    let intervalId
 
     start.addEventListener('click',()=>{
-        if(isClicked === true){
-            intervalId 
-        }
-        isClicked = false
+        intervalId = setInterval(changeText,1000)
     })
     stop.addEventListener('click',()=>{
         clearInterval(intervalId)
-        isClicked = true
     })
 
 </script>
